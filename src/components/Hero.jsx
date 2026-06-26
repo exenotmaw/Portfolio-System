@@ -74,7 +74,7 @@ export default function Hero() {
       {/* --- THE REVEALED BIO --- */}
       <div ref={bioRef} className="absolute bottom-12 md:bottom-24 left-0 w-full flex flex-col items-center justify-center text-center z-10 px-6 md:px-24 pointer-events-none">
         <h3 className="text-3xl md:text-5xl font-serif text-white leading-tight mb-6 max-w-4xl">
-          I architect scalable, data-driven platforms.
+
         </h3>
         <p className="text-base md:text-lg text-zinc-400 font-sans leading-relaxed max-w-3xl mx-auto">
           Specializing in bridging the gap between robust backend engineering and high-end frontend execution. From real-time inventory ecosystems to predictive environmental telemetry, my work focuses on precision, performance, and uncompromising design.
