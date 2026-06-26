@@ -10,7 +10,6 @@ import Marquee from './components/Marquee';
 import Projects from './components/Projects';
 import VisualGallery from './components/VisualGallery';
 import Footer from './components/Footer';
-import { Analytics } from "@vercel/analytics/next"
 
 gsap.registerPlugin(ScrollTrigger);
 
