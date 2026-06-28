@@ -40,7 +40,7 @@ export default function App() {
         <Projects />
         <VisualGallery />
         <Footer />
-
+        <BackgroundMusic/>
       </div>
     </ReactLenis>
   );
