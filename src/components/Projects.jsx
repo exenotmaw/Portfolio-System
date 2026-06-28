@@ -58,37 +58,41 @@ export default function Projects() {
   ];
 
   useGSAP(() => {
-    // 1. LEFT COLUMN: Scrub forces it to perfectly merge on scroll down, and split on scroll up.
-    gsap.fromTo('.left-col', 
-      { x: -150, opacity: 0 },
-      {
-        x: 0,
-        opacity: 1,
-        ease: "none",
-        scrollTrigger: {
-          trigger: containerRef.current,
-          start: "top 80%",
-          end: "top 20%",
-          scrub: 1 // This is the magic command for the reverse scroll split
+    // 1. LEFT COLUMN CARDS: Grab them individually and slide from the left
+    gsap.utils.toArray('.left-col .project-card').forEach((card) => {
+      gsap.fromTo(card, 
+        { x: -150, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          ease: "none",
+          scrollTrigger: {
+            trigger: card, // The trigger is now the specific card, not the whole container
+            start: "top 90%", // Starts sliding when the card enters the bottom 10% of the screen
+            end: "top 50%",   // Fully in place by the time it hits the middle of the screen
+            scrub: 1
+          }
         }
-      }
-    );
+      );
+    });
 
-    // 2. RIGHT COLUMN
-    gsap.fromTo('.right-col', 
-      { x: 150, opacity: 0 },
-      {
-        x: 0,
-        opacity: 1,
-        ease: "none",
-        scrollTrigger: {
-          trigger: containerRef.current,
-          start: "top 80%",
-          end: "top 20%",
-          scrub: 1 
+    // 2. RIGHT COLUMN CARDS: Grab them individually and slide from the right
+    gsap.utils.toArray('.right-col .project-card').forEach((card) => {
+      gsap.fromTo(card, 
+        { x: 150, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          ease: "none",
+          scrollTrigger: {
+            trigger: card,
+            start: "top 90%",
+            end: "top 50%",
+            scrub: 1 
+          }
         }
-      }
-    );
+      );
+    });
   }, { scope: containerRef });
 
   return (

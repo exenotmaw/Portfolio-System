@@ -73,13 +73,13 @@ export default function SocialGallery() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: containerRef.current,
-        start: "top 60%", // Starts animating when container is 60% down the screen
-        end: "top 10%",   // Finishes spreading when it reaches near the top
-        scrub: 1,         // THIS ties it to the mouse wheel. Scroll down = spread, scroll up = stack.
+        start: "top 60%", 
+        end: "top 10%",   
+        scrub: 1,         
       }
     });
 
-    // 3. Move each card to its final spread position
+    // 3. Move each outer wrapper to its final spread position
     cardsRef.current.forEach((card, index) => {
       tl.to(card, {
         x: spreadConfigs[index].x,
@@ -87,7 +87,7 @@ export default function SocialGallery() {
         rotation: spreadConfigs[index].rotation,
         scale: spreadConfigs[index].scale,
         ease: "power2.out"
-      }, 0); // The '0' forces all 5 cards to animate simultaneously
+      }, 0); 
     });
 
   }, { scope: containerRef });
@@ -100,31 +100,42 @@ export default function SocialGallery() {
         <span className="font-light italic text-[#FF0033]">ON SOCIALS</span>
       </h2>
 
-      {/* The Container acts as the anchor point for the absolute positioned cards */}
       <div className="relative w-full h-[400px] md:h-[500px] flex justify-center items-center mt-12">
         {socials.map((social, index) => {
-          
-          // Mathematically sets the z-index so the center card is always physically on top of the deck
+          // Calculate base z-index for the resting state
           const zIndexValue = 5 - Math.abs(2 - index); 
           
           return (
+            /* THE OUTER WRAPPER:
+              Controlled by GSAP. We use `hover:!z-50` here so when hovered, 
+              it forcefully jumps to the very front of the stacking context.
+            */
             <div 
               key={social.id}
               ref={el => cardsRef.current[index] = el}
               style={{ zIndex: zIndexValue }}
-              // Absolute positioning ensures they start layered on top of each other
-              className="absolute w-44 h-64 md:w-72 md:h-[26rem] rounded-2xl overflow-hidden border-2 border-zinc-800 bg-zinc-900 shadow-2xl group cursor-pointer"
+              className="absolute w-44 h-64 md:w-72 md:h-[26rem] hover:!z-50 group cursor-pointer"
             >
-              <img 
-                src={social.src} 
-                alt={`${social.id} feed`} 
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" 
-              />
               
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300"></div>
+              /* THE INNER CARD: 
+                Handles the physical "pop" effect. Scales up, translates upward, 
+                and casts a neon red shadow entirely via CSS.
+              */
+              <div className="w-full h-full rounded-2xl overflow-hidden border-2 border-zinc-800 bg-zinc-900 shadow-2xl transition-all duration-300 ease-out group-hover:scale-105 group-hover:-translate-y-4 group-hover:shadow-[0_20px_50px_rgba(255,0,51,0.3)] relative">
+                
+                <img 
+                  src={social.src} 
+                  alt={`${social.id} feed`} 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" 
+                />
+                
+                {/* Dark Overlay */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300"></div>
 
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 scale-50 group-hover:scale-100 transition-all duration-300 ease-out">
-                {social.icon}
+                {/* Social Icon */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 scale-50 group-hover:scale-100 transition-all duration-300 ease-out">
+                  {social.icon}
+                </div>
               </div>
             </div>
           );
