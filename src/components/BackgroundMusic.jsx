@@ -18,7 +18,7 @@ export default function BackgroundMusic() {
       onClick={toggleMusic}
       className="fixed bottom-6 left-6 z-[60] bg-[#FF0033] text-white p-3 rounded-full shadow-lg"
     >
-      {isPlaying ? "⏸️" : "🔊"}
+      {isPlaying ? "⏸" : "🔊"}
     </button>
   );
 }
