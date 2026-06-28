@@ -94,7 +94,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-6">
                 <span className="text-2xl">✉️</span>
-                <span className="text-lg">anoymous.raizel@example.com</span>
+                <span className="text-lg">anoymous.raizel@gmail.com</span>
               </div>
               <div className="flex items-center gap-6">
                 <span className="text-2xl">📞</span>
