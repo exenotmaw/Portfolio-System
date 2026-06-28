@@ -34,16 +34,15 @@ export default function App() {
         The LiquidBackground handles the colors now.
       */}
       <div className="relative w-full min-h-screen selection:bg-[#FF0033] selection:text-black">
-        
         <LiquidBackground /> {/* <-- Place it at the absolute top of the layout */}
+        <BackgroundMusic/>
         <Navbar />
         <Hero />
         <Marquee />
         <Projects />
         <VisualGallery />
-        <Footer />
-        <BackgroundMusic/>
         <SocialGallery />
+        <Footer />
       </div>
     </ReactLenis>
   );
