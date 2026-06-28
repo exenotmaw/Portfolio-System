@@ -102,7 +102,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-6">
                 <span className="text-2xl">👥</span>
-                <span className="text-lg">facebook.com/defnotmaw</span>
+                <span className="text-lg">exenotmaw</span>
               </div>
             </div>
 
@@ -165,7 +165,7 @@ export default function Footer() {
               type="submit" 
               className="bg-[#0a0a0a] text-white py-4 px-8 rounded-md font-black uppercase tracking-tight hover:bg-[#e67e22] transition-colors flex items-center justify-center gap-2 shadow-lg mt-2 w-max"
             >
-              Send Message <span className="text-xl">↗</span>
+              Send Message <span className="text-xl"></span>
             </button>
           </form>
 
@@ -184,7 +184,7 @@ export default function Footer() {
         </div>
         
         <p className="opacity-70">
-          © 2026 John Mar Fulton. All Rights Reserved.
+          © 2026 exenotmaw. All Rights Reserved.
         </p>
       </div>
       
