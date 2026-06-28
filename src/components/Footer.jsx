@@ -29,11 +29,31 @@ export default function Footer() {
     );
   }, { scope: footerRef });
 
-  const handleSubmit = (e) => {
+  // UPGRADED: Handles the form submission in the background using fetch
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Submitted:", formData);
-    alert("Message sent!");
-    setFormData({ name: '', email: '', message: '' });
+    
+    try {
+      // Sends the data to Formspree as a properly formatted JSON object
+      const response = await fetch("https://formspree.io/f/mnjkvllb", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        alert("Message sent successfully!");
+        setFormData({ name: '', email: '', message: '' }); // Clear the form
+      } else {
+        alert("Oops! There was a problem submitting your form.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Oops! There was a network error.");
+    }
   };
 
   return (
@@ -49,7 +69,6 @@ export default function Footer() {
             // 03. Initialization
           </h2>
           
-          {/* Added whitespace-nowrap and adjusted text-[11vw] to force it to a single line */}
           <h1 className="w-full text-[11vw] font-black uppercase tracking-tighter leading-none text-[#0a0a0a] mb-6 hover:text-white transition-colors duration-500 cursor-default whitespace-nowrap">
             LET'S TALK
           </h1>
@@ -98,12 +117,14 @@ export default function Footer() {
           </div>
 
           {/* RIGHT COLUMN: Contact Form */}
-          <form action="https://formspree.io/f/mnjkvllb" method="POST">
+          {/* Restored the onSubmit handler and flex classes for proper layout spacing */}
+          <form onSubmit={handleSubmit} className="flex flex-col gap-6 font-sans">
             <div className="flex flex-col gap-2">
               <label htmlFor="name" className="text-sm font-bold uppercase tracking-wider">Name</label>
               <input 
                 type="text" 
                 id="name" 
+                name="name"
                 placeholder="Your Name"
                 required
                 value={formData.name}
@@ -117,6 +138,7 @@ export default function Footer() {
               <input 
                 type="email" 
                 id="email" 
+                name="email"
                 placeholder="your.email@example.com"
                 required
                 value={formData.email}
@@ -128,7 +150,8 @@ export default function Footer() {
             <div className="flex flex-col gap-2">
               <label htmlFor="message" className="text-sm font-bold uppercase tracking-wider">Message</label>
               <textarea 
-                id="message" 
+                id="message"
+                name="message" 
                 rows="4" 
                 placeholder="Write your message here..."
                 required

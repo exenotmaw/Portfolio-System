@@ -11,6 +11,7 @@ import Projects from './components/Projects';
 import VisualGallery from './components/VisualGallery';
 import Footer from './components/Footer';
 import BackgroundMusic from './components/BackgroundMusic';
+import SocialGallery from './components/SocialGallery';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,6 +43,7 @@ export default function App() {
         <VisualGallery />
         <Footer />
         <BackgroundMusic/>
+        <SocialGallery />
       </div>
     </ReactLenis>
   );
