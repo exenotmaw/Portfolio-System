@@ -117,10 +117,6 @@ export default function SocialGallery() {
               className="absolute w-44 h-64 md:w-72 md:h-[26rem] hover:!z-50 group cursor-pointer"
             >
               
-              /* THE INNER CARD: 
-                Handles the physical "pop" effect. Scales up, translates upward, 
-                and casts a neon red shadow entirely via CSS.
-              */
               <div className="w-full h-full rounded-2xl overflow-hidden border-2 border-zinc-800 bg-zinc-900 shadow-2xl transition-all duration-300 ease-out group-hover:scale-105 group-hover:-translate-y-4 group-hover:shadow-[0_20px_50px_rgba(255,0,51,0.3)] relative">
                 
                 <img 
