@@ -98,7 +98,7 @@ export default function Footer() {
           </div>
 
           {/* RIGHT COLUMN: Contact Form */}
-          <form onSubmit={handleSubmit} className="flex flex-col gap-6 font-sans">
+          <form action="https://formspree.io/f/mnjkvllb" method="POST">
             <div className="flex flex-col gap-2">
               <label htmlFor="name" className="text-sm font-bold uppercase tracking-wider">Name</label>
               <input 
