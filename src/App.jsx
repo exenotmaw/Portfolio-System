@@ -12,6 +12,7 @@ import VisualGallery from './components/VisualGallery';
 import Footer from './components/Footer';
 import BackgroundMusic from './components/BackgroundMusic';
 import SocialGallery from './components/SocialGallery';
+import { Analytics } from "@vercel/analytics/next"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,13 +30,13 @@ export default function App() {
 
   return (
     <ReactLenis root ref={lenisRef} options={{ lerp: 0.1, duration: 1.5, smoothTouch: true }}>
-      
+
       {/* Removed bg-[#0a0a0a] from here so it is transparent. 
         The LiquidBackground handles the colors now.
       */}
       <div className="relative w-full min-h-screen selection:bg-[#FF0033] selection:text-black">
         <LiquidBackground /> {/* <-- Place it at the absolute top of the layout */}
-        <BackgroundMusic/>
+        <BackgroundMusic />
         <Navbar />
         <Hero />
         <Marquee />
