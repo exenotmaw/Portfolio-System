@@ -44,6 +44,7 @@ export default function App() {
         <VisualGallery />
         <SocialGallery />
         <Footer />
+        <Analytics />
       </div>
     </ReactLenis>
   );
