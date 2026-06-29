@@ -1,4 +1,5 @@
 // src/App.jsx
+import { Analytics } from '@vercel/analytics/react';
 import { useEffect, useRef } from 'react';
 import { ReactLenis } from 'lenis/react';
 import gsap from 'gsap';
