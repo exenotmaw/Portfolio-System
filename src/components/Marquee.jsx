@@ -10,7 +10,7 @@ export default function Marquee() {
 
   // The tech stack array
   const techStack = [
-    "PROMPT ENGINEER", "EDITOR", "AI AUTOMATION", "WEB DEVELOPER"
+    "PROMPT ENGINEER", "VIDEO EDITOR", "AI AUTOMATION", "WEB DEVELOPER", "SOFTWARE ENGINEER"
   ];
 
   useGSAP(() => {
