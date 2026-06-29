@@ -15,14 +15,14 @@ export default function Projects() {
       category: "Telemetry & Valuation",
       stack: "Python / Figma",
       description: "An advanced telemetry suite and real estate valuation platform engineered for Tanza, Cavite. It utilizes predictive machine learning models alongside an automated data pipeline that interpolates PM2.5 to AQI metrics across 21 barangays.",
-      link: "https://github.com/exenotmaw/House-Sight-Tanza"
+      link: "https://house-sight-tanza.vercel.app/"
     },
     {
       title: "SIGNATURA",
       category: "E-Commerce Archive",
       stack: "JavaScript",
       description: "A secure, classified tech-noir archive where users navigate, inspect, and acquire limited-edition, creator-forged assets using a custom terminal-driven interface.",
-      link: "https://github.com/exenotmaw/Signatura-Clothing-Website"
+      link: "https://signatura-clothing.pages.dev/"
     },
     {
       title: "CONTINUUM",
