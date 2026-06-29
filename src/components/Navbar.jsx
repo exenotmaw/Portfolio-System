@@ -15,7 +15,14 @@ export default function Navbar() {
       {/* Optional: Add other links here if needed */}
       <div className="pointer-events-auto">
         <span className="text-zinc-600 font-mono text-xs uppercase">
-          2026 // RAZ
+          <a 
+            href="/Curriculum_Vitae.pdf" 
+            target="_blank" 
+            rel="noreferrer" 
+            className="hover:opacity-50 transition-opacity"
+          >
+            Resume
+          </a>
         </span>
       </div>
     </nav>
