@@ -12,7 +12,7 @@ import VisualGallery from './components/VisualGallery';
 import Footer from './components/Footer';
 import BackgroundMusic from './components/BackgroundMusic';
 import SocialGallery from './components/SocialGallery';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/react';
 
 gsap.registerPlugin(ScrollTrigger);
 
