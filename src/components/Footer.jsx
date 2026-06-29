@@ -84,7 +84,7 @@ export default function Footer() {
           {/* LEFT COLUMN: Contact Details */}
           <div className="flex flex-col">
             <p className="text-lg font-sans leading-relaxed mb-12 font-medium opacity-90 max-w-md">
-              I'm always open to discussing new opportunities, frontend development projects, and custom web designs.
+              I'm always open to discussing new opportunities, projects development, and custom web designs.
             </p>
 
             <div className="flex flex-col gap-8 font-sans text-[#0a0a0a] font-bold">
@@ -102,7 +102,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-6">
                 <span className="text-2xl">👥</span>
-                <span className="text-lg">exenotmaw</span>
+                <span className="text-lg">John Mar Fulton</span>
               </div>
             </div>
 
@@ -117,7 +117,6 @@ export default function Footer() {
           </div>
 
           {/* RIGHT COLUMN: Contact Form */}
-          {/* Restored the onSubmit handler and flex classes for proper layout spacing */}
           <form onSubmit={handleSubmit} className="flex flex-col gap-6 font-sans">
             <div className="flex flex-col gap-2">
               <label htmlFor="name" className="text-sm font-bold uppercase tracking-wider">Name</label>
@@ -178,13 +177,21 @@ export default function Footer() {
           <a href="https://github.com/exenotmaw" target="_blank" rel="noreferrer" className="hover:opacity-50 transition-opacity">
             GitHub
           </a>
-          <a href="#" className="hover:opacity-50 transition-opacity">
+          
+          {/* UPDATED RESUME LINK */}
+          <a 
+            href="/Curriculum_Vitae.pdf" 
+            target="_blank" 
+            rel="noreferrer" 
+            className="hover:opacity-50 transition-opacity"
+          >
             Resume
           </a>
+          
         </div>
         
         <p className="opacity-70">
-          © 2026 exenotmaw. All Rights Reserved.
+          © 2026 John Mar Fulton. All Rights Reserved.
         </p>
       </div>
       
