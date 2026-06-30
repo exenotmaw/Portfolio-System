@@ -69,7 +69,7 @@ export default function Hero() {
                 <path id="circlePath" d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="transparent" />
                 <text className="text-[14.5px] font-mono font-bold fill-white uppercase tracking-widest">
                   <textPath href="#circlePath">
-                    Prompt Engineer • Software Engineer • 
+                    Web Developer • AI Automation • 
                   </textPath>
                 </text>
               </svg>
@@ -89,9 +89,8 @@ export default function Hero() {
           </h2>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-6 tracking-tighter">
-            WEB DEVELOPER <br/>
-            AI AUTOMATION <br/>
-            VIDEO EDITOR.
+            SOFTWARE ENGINEER <br/>
+            PROMPT ENGINEER <br/>
           </h1>
           
           <p className="text-zinc-400 text-base md:text-lg leading-relaxed max-w-lg mb-10 font-sans">
