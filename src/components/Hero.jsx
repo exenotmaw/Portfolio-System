@@ -62,20 +62,23 @@ export default function Hero() {
             />
           </div>
 
-          {/* Spinning "Hire Me" Badge (Replicating your reference image) */}
-          <div className="absolute -bottom-4 -left-4 md:bottom-4 md:left-4 z-20 w-32 h-32 flex items-center justify-center">
+          {/* Increased container to w-40 h-40 */}
+          <div className="absolute -bottom-4 -left-4 md:bottom-4 md:left-4 z-20 w-40 h-40 flex items-center justify-center">
             <div className="absolute w-full h-full animate-[spin_10s_linear_infinite]">
-              <svg viewBox="0 0 100 100" className="w-full h-full overflow-visible">
-                <path id="circlePath" d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="transparent" />
-                <text className="text-[14.5px] font-mono font-bold fill-white uppercase tracking-widest">
-                  <textPath href="#circlePath">
+              {/* Expanded viewBox to 120x120 to give the SVG more breathing room */}
+              <svg viewBox="0 0 120 120" className="w-full h-full overflow-visible">
+                {/* Expanded the math to create a wider radius (50 instead of 40) */}
+                <path id="circlePath" d="M 60, 60 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" fill="transparent" />
+                {/* Adjusted text size and spacing so it perfectly connects without overlapping */}
+                <text className="text-[13.5px] font-mono font-bold fill-white uppercase tracking-[0.12em]">
+                  <textPath href="#circlePath" startOffset="0%">
                     Web Developer • AI Automation • 
                   </textPath>
                 </text>
               </svg>
             </div>
-            {/* Inner Dark Circle */}
-            <div className="absolute w-16 h-16 bg-[#0a0a0a] rounded-full border border-zinc-700 flex items-center justify-center text-xs font-bold text-[#FF0033] uppercase">
+            {/* Scaled the inner dark circle up to w-20 h-20 to match the new outer size */}
+            <div className="absolute w-20 h-20 bg-[#0a0a0a] rounded-full border border-zinc-700 flex items-center justify-center text-xs font-bold text-[#FF0033] uppercase shadow-[0_0_20px_rgba(255,0,51,0.2)]">
               Hire Me
             </div>
           </div>
@@ -93,14 +96,14 @@ export default function Hero() {
             PROMPT ENGINEER <br/>
           </h1>
           
-          <p className="text-zinc-400 text-base md:text-lg leading-relaxed max-w-lg mb-10 font-sans">
+          <p className="text-zinc-400 text-base md:text-lg leading-relaxed max-w-lg mb-10 font-sans text-justify">
             Specializing in bridging the gap between robust backend engineering and high-end frontend execution. From real-time inventory ecosystems to predictive environmental telemetry, my work focuses on precision, performance, and uncompromising design.
           </p>
           
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-4 font-mono font-bold uppercase text-sm">
             <a 
-              href="/Raizel_Velasquez_CV.pdf" 
+              href="/Curriculum_Vitae.pdf" 
               target="_blank"
               rel="noreferrer"
               className="bg-[#FF0033] text-white px-8 py-4 rounded hover:bg-white hover:text-[#FF0033] transition-colors duration-300 flex items-center gap-2 shadow-lg shadow-[#FF0033]/20"
