@@ -72,7 +72,7 @@ export default function Hero() {
                 {/* Adjusted text size and spacing so it perfectly connects without overlapping */}
                 <text className="text-[13.5px] font-mono font-bold fill-white uppercase tracking-[0.12em]">
                   <textPath href="#circlePath" startOffset="0%">
-                    Web Developer • AI Automation • 
+                    Web Developer • AI Automation •
                   </textPath>
                 </text>
               </svg>
