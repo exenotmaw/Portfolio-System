@@ -35,11 +35,11 @@ export default function Projects() {
 
   const offTrackProjects = [
     {
-      title: "ChipSim",
-      category: "Interactive Logic",
+      title: "Ferroheart",
+      category: "Dating Site",
       stack: "JavaScript",
-      description: "An experimental frontend simulation repository built to explore mathematical algorithms, particle generation, and custom visual rendering.",
-      link: "https://github.com/exenotmaw/Scatter-Simulation"
+      description: "FerroHeart is a secure, personal e-commerce archive designed for creator-forged assets. It serves as a tech-noir platform that enables users to curate, archive, and manage limited-edition artisan items through a secure digital environment.",
+      link: "https://ferroheart-app.vercel.app/"
     },
     {
       title: "OCULAR",
