@@ -63,7 +63,7 @@ export default function Hero() {
           </div>
 
           {/* Increased container to w-40 h-40 */}
-          <div className="absolute -bottom-4 -left-4 md:bottom-4 md:left-4 z-20 w-40 h-40 flex items-center justify-center">
+          <div className="absolute -bottom-4 -left-4 md:bottom-4 md:left-4 z-20 w-35 h-35 flex items-center justify-center">
             <div className="absolute w-full h-full animate-[spin_10s_linear_infinite]">
               {/* Expanded viewBox to 120x120 to give the SVG more breathing room */}
               <svg viewBox="0 0 120 120" className="w-full h-full overflow-visible">
