@@ -85,13 +85,13 @@ export default function Hero() {
         <div className="w-full md:w-1/2 flex flex-col items-start text-left z-20">
           
           <h2 className="text-[#FF0033] font-mono text-sm md:text-base tracking-widest uppercase mb-4 font-bold">
-            John Mar Fulton // BS Computer Science
+            John Mar Fulton // Bachelor of Science in Computer Science
           </h2>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-6 tracking-tighter">
-            Web Developer <br/>
-            Video Editor <br/>
-            AI Automation.
+            WEB DEVELOPER <br/>
+            AI AUTOMATION <br/>
+            VIDEO EDITOR.
           </h1>
           
           <p className="text-zinc-400 text-base md:text-lg leading-relaxed max-w-lg mb-10 font-sans">
