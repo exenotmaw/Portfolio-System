@@ -56,7 +56,7 @@ export default function Hero() {
           {/* Main Image Container */}
           <div className="w-72 h-72 md:w-[32rem] md:h-[32rem] rounded-full overflow-hidden border-2 border-zinc-800 bg-zinc-900 shadow-[0_0_50px_rgba(0,0,0,0.5)] relative group z-10">
             <img 
-              src="/profile.jpg" 
+              src="/me.jpg" 
               alt="Raizel Velasquez Profile" 
               className="w-full h-full object-cover object-center grayscale group-hover:grayscale-0 transition-all duration-700"
             />
