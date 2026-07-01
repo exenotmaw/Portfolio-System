@@ -29,7 +29,7 @@ export default function Projects() {
       category: "AI Command Center",
       stack: "TypeScript",
       description: "An AI-driven content management and drafting platform. It acts as a centralized command center where users can instantly generate, organize, and streamline the creation of digital content.",
-      link: "https://github.com/exenotmaw/Continuum-Website"
+      link: "https://continuum-two-beta.vercel.app/"
     }
   ];
 
