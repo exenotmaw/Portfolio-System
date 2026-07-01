@@ -53,7 +53,7 @@ export default function Projects() {
       category: "Creative Systems",
       stack: "JavaScript",
       description: "An exploratory repository focused on creative coding systems and visual experimentation, pushing the boundaries of interface design and digital aesthetics.",
-      link: "https://github.com/exenotmaw/Lumimaryx"
+      link: "https://luminaryx-rho.vercel.app/"
     }
   ];
 
