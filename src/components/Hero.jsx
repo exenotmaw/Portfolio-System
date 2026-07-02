@@ -1,8 +1,9 @@
 // src/components/Hero.jsx
 import { useRef } from 'react';
-import gsap from 'https://esm.sh/gsap';
-import { ScrollTrigger } from 'https://esm.sh/gsap/ScrollTrigger';
-import { useGSAP } from 'https://esm.sh/@gsap/react';
+// FIXED: Reverted back to standard local imports
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
