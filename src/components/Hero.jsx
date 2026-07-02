@@ -1,8 +1,8 @@
 // src/components/Hero.jsx
 import { useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useGSAP } from '@gsap/react';
+import gsap from 'https://esm.sh/gsap';
+import { ScrollTrigger } from 'https://esm.sh/gsap/ScrollTrigger';
+import { useGSAP } from 'https://esm.sh/@gsap/react';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -50,50 +50,15 @@ export default function Hero() {
       {/* --- THE SPLIT LAYOUT (Scales as one unit on scroll) --- */}
       <div ref={posterRef} className="relative z-20 w-full flex flex-col md:flex-row items-center justify-between origin-center gap-12 md:gap-8">
         
-        {/* LEFT COLUMN: The Image & Spinning Badge */}
-        <div className="w-full md:w-1/2 flex justify-center relative">
-          
-          {/* Main Image Container */}
-          <div className="w-72 h-72 md:w-[32rem] md:h-[32rem] rounded-full overflow-hidden border-2 border-zinc-800 bg-zinc-900 shadow-[0_0_50px_rgba(0,0,0,0.5)] relative group z-10">
-            <img 
-              src="/me.jpg" 
-              alt="Raizel Velasquez Profile" 
-              className="w-full h-full object-cover object-center grayscale group-hover:grayscale-0 transition-all duration-700"
-            />
-          </div>
-
-          {/* Increased container to w-40 h-40 */}
-          <div className="absolute -bottom-4 -left-4 md:bottom-4 md:left-4 z-20 w-35 h-35 flex items-center justify-center">
-            <div className="absolute w-full h-full animate-[spin_10s_linear_infinite]">
-              {/* Expanded viewBox to 120x120 to give the SVG more breathing room */}
-              <svg viewBox="0 0 120 120" className="w-full h-full overflow-visible">
-                {/* Expanded the math to create a wider radius (50 instead of 40) */}
-                <path id="circlePath" d="M 60, 60 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" fill="transparent" />
-                {/* Adjusted text size and spacing so it perfectly connects without overlapping */}
-                <text className="text-[13.5px] font-mono font-bold fill-white uppercase tracking-[0.12em]">
-                  <textPath href="#circlePath" startOffset="0%">
-                    Web Developer • AI Automation •
-                  </textPath>
-                </text>
-              </svg>
-            </div>
-            {/* Scaled the inner dark circle up to w-20 h-20 to match the new outer size */}
-            <div className="absolute w-20 h-20 bg-[#0a0a0a] rounded-full border border-zinc-700 flex items-center justify-center text-xs font-bold text-[#FF0033] uppercase shadow-[0_0_20px_rgba(255,0,51,0.2)]">
-              Hire Me
-            </div>
-          </div>
-        </div>
-
-        {/* RIGHT COLUMN: Typography & Call to Actions */}
+        {/* LEFT COLUMN: Typography & Call to Actions */}
         <div className="w-full md:w-1/2 flex flex-col items-start text-left z-20">
           
-          <h2 className="text-[#FF0033] font-mono text-sm md:text-base tracking-widest uppercase mb-4 font-bold">
-            John Mar Fulton // Bachelor of Science in Computer Science
-          </h2>
-          
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-6 tracking-tighter">
-            SOFTWARE ENGINEER <br/>
-            PROMPT ENGINEER <br/>
+          {/* Big Name & Degree replacing the old text */}
+          <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-black text-white leading-[1.1] mb-8 tracking-tighter uppercase">
+            John Mar Fulton <br/>
+            <span className="text-[#FF0033] text-2xl md:text-4xl lg:text-5xl tracking-tight">
+              // Bachelor of Science in Computer Science
+            </span>
           </h1>
           
           <p className="text-zinc-400 text-base md:text-lg leading-relaxed max-w-lg mb-10 font-sans text-justify">
@@ -117,7 +82,41 @@ export default function Hero() {
               Contact
             </a>
           </div>
+        </div>
 
+        {/* RIGHT COLUMN: The Image & Spinning Badge */}
+        <div className="w-full md:w-1/2 flex justify-center md:justify-end relative">
+          
+          {/* Inner wrapper to anchor the badge perfectly to the portrait image */}
+          <div className="relative">
+            
+            {/* 3:4 Portrait Image Container */}
+            <div className="w-64 md:w-[22rem] lg:w-[26rem] aspect-[3/4] rounded-2xl overflow-hidden border-2 border-zinc-800 bg-zinc-900 shadow-[0_0_50px_rgba(0,0,0,0.5)] relative group z-10">
+              <img 
+                src="/me.jpg" 
+                alt="John Mar Fulton Profile" 
+                className="w-full h-full object-cover object-center grayscale group-hover:grayscale-0 transition-all duration-700"
+              />
+            </div>
+
+            {/* Spinning "Hire Me" Badge (Positioned at bottom-left of the portrait) */}
+            <div className="absolute -bottom-10 -left-10 z-20 w-40 h-40 flex items-center justify-center">
+              <div className="absolute w-full h-full animate-[spin_10s_linear_infinite]">
+                <svg viewBox="0 0 120 120" className="w-full h-full overflow-visible">
+                  <path id="circlePath" d="M 60, 60 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" fill="transparent" />
+                  <text className="text-[13.5px] font-mono font-bold fill-white uppercase tracking-[0.12em]">
+                    <textPath href="#circlePath" startOffset="0%">
+                      Web Developer • AI Automation •
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+              <div className="absolute w-20 h-20 bg-[#0a0a0a] rounded-full border border-zinc-700 flex items-center justify-center text-xs font-bold text-[#FF0033] uppercase shadow-[0_0_20px_rgba(255,0,51,0.2)]">
+                Hire Me
+              </div>
+            </div>
+            
+          </div>
         </div>
 
       </div>
