@@ -46,7 +46,7 @@ export default function Projects() {
       category: "Digital Archive",
       stack: "JavaScript",
       description: "Ocular is an AI-powered study companion that transforms any document, note, or text into a sophisticated, academic assessment—all wrapped in the timeless elegance of a classical library.",
-      link: "https://github.com/exenotmaw/Ocular"
+      link: "https://ocular-six.vercel.app/"
     },
     {
       title: "LUMIMARYX",
