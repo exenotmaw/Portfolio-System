@@ -16,7 +16,8 @@ export default function VisualGallery() {
     { title: "HOUSE SIGHT TANZA", category: "Telemetry & Map Render" },
     { title: "LUMINARYX", category: "Creative System" },
     { title: "CONTINUUM", category: "AI Command Center" },
-    { title: "FERROHEART", category: "Dating Surprise" }
+    { title: "FERROHEART", category: "Dating Surprise" },
+    { title: "OCULAR", category: "Exam Generator" }
   ];
 
   useGSAP(() => {
