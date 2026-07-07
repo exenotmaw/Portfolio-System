@@ -35,21 +35,38 @@ export default function Projects() {
 
   const offTrackProjects = [
     {
-      title: "Ferroheart",
-      category: "Sharable Contents",
-      stack: "JavaScript",
-      description: "Architected and engineered FerroHeart, a full-stack React and Supabase SaaS platform, resulting in a highly secure, production-ready application that transforms user-generated content into shareable, cinematic digital experiences.",
-      link: "https://ferroheart-app.vercel.app/"
+      // --- UPGRADED FERROHEART STRUCTURE ---
+      title: "FERROHEART",
+      category: "Premium Digital Archiving & Cinematic Timeline Generation",
+      stack: "React / Supabase / GSAP",
+      description: "A full-stack SaaS platform designed to curate and generate secure digital memory timelines. FerroHeart transforms user-uploaded media and textual narratives into highly interactive, shareable web experiences, merging robust backend architecture with a minimalist, high-fashion visual aesthetic.",
+      link: "https://ferroheart-app.vercel.app/",
+      
+      technicalBreakdown: [
+        "Architected a React-based SaaS application utilizing Supabase for PostgreSQL database management and secure user authentication, resulting in a robust, scalable foundation for a premium digital asset platform.",
+        "Orchestrated complex front-end interactions integrating GSAP and ScrollTrigger to build dynamic timeline interfaces, yielding a seamless, immersive user journey featuring zero-latency media rendering and 3D parallax effects.",
+        "Executed comprehensive production-security protocols—including environmental variable masking, strict MIME-type file-upload limiters, and GDPR/DMCA compliance features—achieving a fully protected, commercial-ready platform hosted on Vercel."
+      ],
+      detailedStack: [
+        { domain: "Frontend", tech: "React, React Router, Tailwind CSS, GSAP" },
+        { domain: "Backend / BaaS", tech: "Supabase, Edge API" },
+        { domain: "Database", tech: "PostgreSQL" },
+        { domain: "Integrations", tech: "Supabase Auth, Storage Buckets" },
+        { domain: "Infrastructure", tech: "Vercel (Client)" },
+      ],
+      keyFeatures: [
+        { name: "Cinematic Timeline Engine", desc: "Engineered complex ScrollTrigger animations, including asynchronous parallax rain and dynamic film strips, coupled with a custom ResizeObserver implementation to guarantee layout stability during dynamic media loading." },
+        { name: "Secure Media Hosting", desc: "Built a protected storage infrastructure enforcing strict 5MB file-size limits, image-only MIME types, and secure Cross-Origin Resource Sharing (CORS) bound exclusively to the production domain to prevent unauthorized database access." },
+        { name: "Commercial Compliance Integration", desc: "Developed native client-side routing safeguards, global cookie consent states via localStorage, and an automated DMCA/Abuse reporting pipeline to ensure immediate commercial viability and host protection." }
+      ]
     },
     {
-      // --- UPGRADED PROJECT STRUCTURE ---
       title: "OCULAR ARCHIVES",
       category: "Cognitive Architecture & Automated Intel",
       stack: "React / FastAPI / PostgreSQL",
       description: "A full-stack, AI-powered terminal designed for rigorous academic synthesis. Ocular bypasses manual data entry by extracting intelligence from multimodal manuscripts and generating structured, high-fidelity examinations.",
       link: "https://ocular-six.vercel.app/",
       
-      // Extended Data Fields (The UI will automatically render these if they exist)
       technicalBreakdown: [
         "Architected a multimodal, AI-driven terminal that instantly transforms raw text, PDFs, and images into structured academic examinations using the Google Gemini 2.5 Flash engine.",
         "Engineered a secure, full-stack infrastructure utilizing a React frontend and a Python/FastAPI backend, anchored by a PostgreSQL database to manage secure credential hashing, session tokens, and user generation metrics.",
@@ -114,7 +131,6 @@ export default function Projects() {
     });
   }, { scope: containerRef });
 
-  // A helper function to render the project card, keeping the code DRY and clean
   const renderProjectCard = (project, i) => (
     <a 
       href={project.link}
@@ -141,11 +157,9 @@ export default function Projects() {
       </p>
 
       {/* --- EXTENDED DATA SECTION --- */}
-      {/* Conditionally renders only if technicalBreakdown exists in the object */}
       {project.technicalBreakdown && (
         <div className="mt-8 flex flex-col gap-8">
           
-          {/* Technical Breakdown Bullet Points */}
           <div>
             <h5 className="text-white text-xs font-mono uppercase tracking-widest mb-3 border-b border-zinc-800 pb-2">
               Technical Breakdown (ARR)
@@ -160,7 +174,6 @@ export default function Projects() {
             </ul>
           </div>
 
-          {/* Key Engineering Features */}
           {project.keyFeatures && (
             <div>
               <h5 className="text-white text-xs font-mono uppercase tracking-widest mb-3 border-b border-zinc-800 pb-2">
@@ -177,7 +190,6 @@ export default function Projects() {
             </div>
           )}
 
-          {/* The Stack Grid */}
           {project.detailedStack && (
             <div>
               <h5 className="text-white text-xs font-mono uppercase tracking-widest mb-3 border-b border-zinc-800 pb-2">
@@ -196,7 +208,6 @@ export default function Projects() {
         </div>
       )}
 
-      {/* Bottom Stack Badge (Pushed to bottom using mt-auto) */}
       <div className="mt-auto pt-6 border-t border-zinc-800/50 flex flex-wrap gap-2 w-full">
         <span className="text-xs font-mono text-zinc-500 uppercase tracking-widest">
           {project.stack}
