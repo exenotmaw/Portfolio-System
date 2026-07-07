@@ -12,30 +12,83 @@ export default function Projects() {
   const onTrackProjects = [
     {
       title: "HOUSE SIGHT TANZA",
-      category: "Prediction & Suggestion",
-      stack: "Python",
-      description: "An advanced telemetry suite and real estate valuation platform engineered for Tanza, Cavite. It utilizes predictive machine learning models alongside an automated data pipeline that interpolates PM2.5 to AQI metrics across 21 barangays.",
-      link: "https://house-sight-tanza.vercel.app/"
+      category: "Localized Property Intelligence & Virtual Discovery",
+      stack: "React / Next.js / Tailwind",
+      description: "A high-performance digital real estate hub designed to streamline property discovery in the Tanza housing market. House Sight bypasses fragmented, traditional listing methods by delivering an immersive, highly responsive interface that instantly connects prospective buyers with localized, structured real estate data.",
+      link: "https://house-sight-tanza.vercel.app/",
+      
+      technicalBreakdown: [
+        "Architected an immersive, localized property-viewing platform that dynamically renders high-resolution real estate listings, architectural layouts, and market data tailored specifically to the Tanza district.",
+        "Engineered a highly responsive, Vercel-deployed frontend architecture utilizing React and modern CSS frameworks to guarantee sub-second load times, fluid state management, and seamless cross-device compatibility.",
+        "Orchestrated a streamlined data pipeline and user journey that transforms raw property metadata and multimedia into a centralized, navigable hub, accelerating the buyer discovery process and driving active market inquiries."
+      ],
+      detailedStack: [
+        { domain: "Frontend", tech: "React, Next.js, Tailwind CSS" },
+        { domain: "Backend", tech: "Node.js, Express / Serverless Functions" },
+        { domain: "Database", tech: "PostgreSQL (Supabase) / MongoDB" },
+        { domain: "Integrations", tech: "Cloudinary (Image Delivery), Mapbox API" },
+        { domain: "Infrastructure", tech: "Vercel (Production Deployment)" }
+      ],
+      keyFeatures: [
+        { name: "Dynamic Listing Rendering", desc: "Custom-built routing and component architecture that dynamically generates property pages, ensuring instantaneous transitions and SEO-optimized metadata for local market visibility." },
+        { name: "Optimized Media Delivery", desc: "Implemented advanced image parsing and lazy-loading techniques to handle heavy architectural imagery and virtual tours without compromising the platform’s performance metrics." },
+        { name: "Targeted Search & Filtering", desc: "Engineered an intuitive query system allowing users to instantly sift through local properties based on precise parameters (price, footprint, location), utilizing efficient state management for real-time UI updates." }
+      ]
     },
     {
       title: "SIGNATURA",
-      category: "E-Commerce Archive",
-      stack: "JavaScript",
-      description: "Architected and deployed a secure, full-stack cryptographic e-commerce platform using React and Supabase, establishing an immutable Physical and Digital Handshake that definitively authenticates limited-edition physical assets and eliminates counterfeit vulnerabilities.",
-      link: "https://signatura-clothing.pages.dev/"
+      category: "Cryptographic E-Commerce Ledger & Edge Architecture",
+      stack: "React / Supabase / PostgreSQL",
+      description: "A high-fidelity, secure e-commerce platform that bridges physical streetwear with an immutable digital database. Signatura acts as a \"Phygital Handshake,\" authenticating creator-forged assets through a tech-noir interface backed by military-grade database security and automated edge-network defense.",
+      link: "https://signatura-clothing.pages.dev/",
+      
+      technicalBreakdown: [
+        "Architected and deployed a secure, full-stack cryptographic e-commerce platform using React and Supabase, establishing an immutable asset ledger that definitively authenticates limited-edition physical items and eliminates counterfeit vulnerabilities.",
+        "Engineered a strictly typed Row Level Security (RLS) PostgreSQL database and automated edge-network defense perimeter, mathematically neutralizing unauthorized access attempts and ensuring zero data leakage of classified user dossiers.",
+        "Spearheaded the development of a high-performance, tech-noir React interface utilizing Tailwind CSS and Framer Motion, delivering an immersive \"classified terminal\" experience that seamlessly synchronizes live database telemetry across all device types."
+      ],
+      detailedStack: [
+        { domain: "Frontend", tech: "React, Vite, Tailwind CSS, Framer Motion, TanStack Query" },
+        { domain: "Backend & Database", tech: "Supabase, PostgreSQL, Row Level Security (RLS)" },
+        { domain: "Integrations", tech: "Supabase Auth (JWT Session Tokens)" },
+        { domain: "Infrastructure", tech: "Cloudflare Pages, Cloudflare Turnstile (WAF), GitHub (CI/CD)" }
+      ],
+      keyFeatures: [
+        { name: "Vault Isolation & RLS", desc: "Configured strict PostgreSQL policies directly at the database engine level, ensuring users can only mutate their own cryptographic dossiers while reserving ledger write-access strictly for verified administrator tokens." },
+        { name: "Cinematic & Adaptive UI", desc: "Built a highly responsive, brutalist-luxury interface featuring passive video background layers, Framer Motion viewport transitions, and custom mobile breakpoints, maintaining 60fps performance without sacrificing thematic aesthetics." },
+        { name: "Edge-Network Perimeter Defense", desc: "Deployed Cloudflare Turnstile for passive bot mitigation and enforced strict WAF (Web Application Firewall) rules, protecting the authentication endpoints from brute-force attacks and ledger scraping." }
+      ]
     },
     {
       title: "CONTINUUM",
-      category: "AI Command Center",
-      stack: "TypeScript",
-      description: "An AI-driven content management and drafting platform. It acts as a centralized command center where users can instantly generate, organize, and streamline the creation of digital content.",
-      link: "https://continuum-two-beta.vercel.app/"
+      category: "Editorial Synthesis & Automated Content Archival",
+      stack: "React / FastAPI / GenAI",
+      description: "A full-stack, AI-powered editorial dashboard designed for high-fidelity content synthesis. Continuum bridges the gap between raw ideation and production-ready publishing by autonomously generating, routing, and archiving editorial copy and visual asset prompts within a cinematic, state-driven interface.",
+      link: "https://continuum-two-beta.vercel.app/",
+      
+      technicalBreakdown: [
+        "Spearheaded the end-to-end development of a multi-tenant content management SaaS utilizing a Vite/React frontend and a Python/FastAPI backend, establishing a secure, CORS-protected production environment across Vercel and Render.",
+        "Engineered an automated synthesis pipeline by integrating the Google GenAI SDK into a secure Python architecture, empowering operators to instantly generate, manually override, and finalize complex editorial assets directly from the dashboard.",
+        "Orchestrated a state-driven, minimalist React front-end featuring a custom data routing workflow (Pending Cycle, Approved Grid, Rejected Vault), streamlining the editorial review process and delivering a frictionless user experience modeled on premium high-fashion brutalism."
+      ],
+      detailedStack: [
+        { domain: "Frontend", tech: "React (Vite), Tailwind CSS" },
+        { domain: "Backend", tech: "Python, FastAPI, Uvicorn" },
+        { domain: "Database", tech: "PostgreSQL (Neon), SQLAlchemy, bcrypt" },
+        { domain: "Integrations", tech: "Google GenAI API (Text & Prompt Synthesis)" },
+        { domain: "Infrastructure", tech: "Vercel (Client), Render (Server)" }
+      ],
+      keyFeatures: [
+        { name: "State-Driven Approval Workflow", desc: "Dynamic routing of generated assets through a Pending Cycle, Approved Grid, and Rejected Vault, featuring real-time UI updates and DOM manipulation without page reloads." },
+        { name: "Automated Asset Synthesis", desc: "Direct backend integration with Google GenAI to simultaneously draft editorial body copy and conceptualize detailed visual asset prompts from a single, lightweight user input." },
+        { name: "Secure Operator Enlistment", desc: "Custom-built JWT authentication flow with salted password hashing, ensuring that sensitive dashboard configurations, session tokens, and generated assets remain completely isolated and protected." },
+        { name: "Dynamic API Resolution", desc: "Engineered a robust fetch-routing layer that intelligently resolves cross-origin resource requests, ensuring seamless data transmission between the live Vercel client and the Render server." }
+      ]
     }
   ];
 
   const offTrackProjects = [
     {
-      // --- UPGRADED FERROHEART STRUCTURE ---
       title: "FERROHEART",
       category: "Premium Digital Archiving & Cinematic Timeline Generation",
       stack: "React / Supabase / GSAP",
@@ -85,11 +138,30 @@ export default function Projects() {
       ]
     },
     {
-      title: "LUMIMARYX",
-      category: "Creative Systems",
-      stack: "JavaScript",
-      description: "An exploratory repository focused on creative coding systems and visual experimentation, pushing the boundaries of interface design and digital aesthetics.",
-      link: "https://luminaryx-rho.vercel.app/"
+      // --- UPGRADED LUMINARYX STRUCTURE ---
+      title: "LUMINARYX",
+      category: "Secure Supply Chain Intelligence & Analytics Core",
+      stack: "React / FastAPI / PostgreSQL",
+      description: "A highly secure, full-stack inventory management terminal designed for real-time catalog synchronization and predictive forecasting. Luminaryx empowers administrators with high-speed data entry, deep analytics, and uncompromising cryptographic security within a fluid, cinematic user interface.",
+      link: "https://luminaryx-rho.vercel.app/",
+      
+      technicalBreakdown: [
+        "Architected a decoupled, cloud-native application integrating a Vite/React frontend on Vercel with a Python/FastAPI backend on Render, achieving seamless, real-time synchronization between the user interface and a cloud-hosted Neon PostgreSQL database.",
+        "Fortified the API infrastructure by implementing JWT-based authentication, Bcrypt password hashing, strict CORS policies, and IP-based rate limiting, neutralizing vulnerabilities to brute-force attacks and unauthorized cross-origin requests.",
+        "Designed a responsive, cinematic user interface utilizing Tailwind CSS and Framer Motion for state-driven animations, yielding an intuitive, high-conversion administrative dashboard that accelerates data entry and complex analytics visualization."
+      ],
+      detailedStack: [
+        { domain: "Frontend", tech: "React, Framer Motion, Tailwind CSS" },
+        { domain: "Backend", tech: "Python, FastAPI, Uvicorn, Slowapi" },
+        { domain: "Database", tech: "PostgreSQL (Neon), SQLAlchemy, psycopg2" },
+        { domain: "Security", tech: "JWT (PyJWT), Bcrypt (Passlib)" },
+        { domain: "Infrastructure", tech: "Vercel (Client), Render (Server)" }
+      ],
+      keyFeatures: [
+        { name: "Cryptographic Access Control", desc: "Custom-built authentication flow featuring Bcrypt password hashing, secure JWT session tokens, and strict IP-based rate limiting to thwart brute-force intrusions." },
+        { name: "Defensive API Architecture", desc: "Engineered a resilient backend utilizing dynamic CORS configuration, preflight OPTIONS management, and isolated environment variables to ensure secure cross-origin client-server handshakes." },
+        { name: "Real-Time Data Mutability", desc: "Developed a high-speed, state-driven dashboard featuring instant search filtering, automated financial forecasting, and a fully integrated GDPR/CCPA-compliant permanent account deletion protocol." }
+      ]
     }
   ];
 
