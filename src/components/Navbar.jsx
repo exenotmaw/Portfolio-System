@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="pointer-events-auto">
         <span className="text-zinc-600 font-mono text-xs uppercase">
           <a 
-            href="/Curriculum_Vitae.pdf" 
+            href="/Curriculum-Vitae.pdf" 
             target="_blank" 
             rel="noreferrer" 
             className="hover:opacity-50 transition-opacity"

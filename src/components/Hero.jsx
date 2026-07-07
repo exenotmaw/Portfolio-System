@@ -69,7 +69,7 @@ export default function Hero() {
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-4 font-mono font-bold uppercase text-sm">
             <a 
-              href="/Curriculum_Vitae.pdf" 
+              href="/Curriculum-Vitae.pdf" 
               target="_blank"
               rel="noreferrer"
               className="bg-[#FF0033] text-white px-8 py-4 rounded hover:bg-white hover:text-[#FF0033] transition-colors duration-300 flex items-center gap-2 shadow-lg shadow-[#FF0033]/20"
