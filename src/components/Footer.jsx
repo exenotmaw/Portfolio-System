@@ -180,7 +180,7 @@ export default function Footer() {
           
           {/* UPDATED RESUME LINK */}
           <a 
-            href="/Curriculum_Vitae.pdf" 
+            href="/Curriculum-Vitae.pdf" 
             target="_blank" 
             rel="noreferrer" 
             className="hover:opacity-50 transition-opacity"
