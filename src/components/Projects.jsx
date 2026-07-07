@@ -11,6 +11,30 @@ export default function Projects() {
 
   const onTrackProjects = [
     {
+      title: "SIGNATURA",
+      category: "Cryptographic E-Commerce Ledger & Edge Architecture",
+      stack: "React / Supabase / PostgreSQL",
+      description: "A high-fidelity, secure e-commerce platform that bridges physical streetwear with an immutable digital database. Signatura acts as a \"Phygital Handshake,\" authenticating creator-forged assets through a tech-noir interface backed by military-grade database security and automated edge-network defense.",
+      link: "https://signatura-clothing.pages.dev/",
+      
+      technicalBreakdown: [
+        "Architected and deployed a secure, full-stack cryptographic e-commerce platform using React and Supabase, establishing an immutable asset ledger that definitively authenticates limited-edition physical items and eliminates counterfeit vulnerabilities.",
+        "Engineered a strictly typed Row Level Security (RLS) PostgreSQL database and automated edge-network defense perimeter, mathematically neutralizing unauthorized access attempts and ensuring zero data leakage of classified user dossiers.",
+        "Spearheaded the development of a high-performance, tech-noir React interface utilizing Tailwind CSS and Framer Motion, delivering an immersive \"classified terminal\" experience that seamlessly synchronizes live database telemetry across all device types."
+      ],
+      detailedStack: [
+        { domain: "Frontend", tech: "React, Vite, Tailwind CSS, Framer Motion, TanStack Query" },
+        { domain: "Backend & Database", tech: "Supabase, PostgreSQL, Row Level Security (RLS)" },
+        { domain: "Integrations", tech: "Supabase Auth (JWT Session Tokens)" },
+        { domain: "Infrastructure", tech: "Cloudflare Pages, Cloudflare Turnstile (WAF), GitHub (CI/CD)" }
+      ],
+      keyFeatures: [
+        { name: "Vault Isolation & RLS", desc: "Configured strict PostgreSQL policies directly at the database engine level, ensuring users can only mutate their own cryptographic dossiers while reserving ledger write-access strictly for verified administrator tokens." },
+        { name: "Cinematic & Adaptive UI", desc: "Built a highly responsive, brutalist-luxury interface featuring passive video background layers, Framer Motion viewport transitions, and custom mobile breakpoints, maintaining 60fps performance without sacrificing thematic aesthetics." },
+        { name: "Edge-Network Perimeter Defense", desc: "Deployed Cloudflare Turnstile for passive bot mitigation and enforced strict WAF (Web Application Firewall) rules, protecting the authentication endpoints from brute-force attacks and ledger scraping." }
+      ]
+    },
+    {
       title: "HOUSE SIGHT TANZA",
       category: "Localized Property Intelligence & Virtual Discovery",
       stack: "React / Next.js / Tailwind",
@@ -33,30 +57,6 @@ export default function Projects() {
         { name: "Dynamic Listing Rendering", desc: "Custom-built routing and component architecture that dynamically generates property pages, ensuring instantaneous transitions and SEO-optimized metadata for local market visibility." },
         { name: "Optimized Media Delivery", desc: "Implemented advanced image parsing and lazy-loading techniques to handle heavy architectural imagery and virtual tours without compromising the platform’s performance metrics." },
         { name: "Targeted Search & Filtering", desc: "Engineered an intuitive query system allowing users to instantly sift through local properties based on precise parameters (price, footprint, location), utilizing efficient state management for real-time UI updates." }
-      ]
-    },
-    {
-      title: "SIGNATURA",
-      category: "Cryptographic E-Commerce Ledger & Edge Architecture",
-      stack: "React / Supabase / PostgreSQL",
-      description: "A high-fidelity, secure e-commerce platform that bridges physical streetwear with an immutable digital database. Signatura acts as a \"Phygital Handshake,\" authenticating creator-forged assets through a tech-noir interface backed by military-grade database security and automated edge-network defense.",
-      link: "https://signatura-clothing.pages.dev/",
-      
-      technicalBreakdown: [
-        "Architected and deployed a secure, full-stack cryptographic e-commerce platform using React and Supabase, establishing an immutable asset ledger that definitively authenticates limited-edition physical items and eliminates counterfeit vulnerabilities.",
-        "Engineered a strictly typed Row Level Security (RLS) PostgreSQL database and automated edge-network defense perimeter, mathematically neutralizing unauthorized access attempts and ensuring zero data leakage of classified user dossiers.",
-        "Spearheaded the development of a high-performance, tech-noir React interface utilizing Tailwind CSS and Framer Motion, delivering an immersive \"classified terminal\" experience that seamlessly synchronizes live database telemetry across all device types."
-      ],
-      detailedStack: [
-        { domain: "Frontend", tech: "React, Vite, Tailwind CSS, Framer Motion, TanStack Query" },
-        { domain: "Backend & Database", tech: "Supabase, PostgreSQL, Row Level Security (RLS)" },
-        { domain: "Integrations", tech: "Supabase Auth (JWT Session Tokens)" },
-        { domain: "Infrastructure", tech: "Cloudflare Pages, Cloudflare Turnstile (WAF), GitHub (CI/CD)" }
-      ],
-      keyFeatures: [
-        { name: "Vault Isolation & RLS", desc: "Configured strict PostgreSQL policies directly at the database engine level, ensuring users can only mutate their own cryptographic dossiers while reserving ledger write-access strictly for verified administrator tokens." },
-        { name: "Cinematic & Adaptive UI", desc: "Built a highly responsive, brutalist-luxury interface featuring passive video background layers, Framer Motion viewport transitions, and custom mobile breakpoints, maintaining 60fps performance without sacrificing thematic aesthetics." },
-        { name: "Edge-Network Perimeter Defense", desc: "Deployed Cloudflare Turnstile for passive bot mitigation and enforced strict WAF (Web Application Firewall) rules, protecting the authentication endpoints from brute-force attacks and ledger scraping." }
       ]
     },
     {
@@ -138,7 +138,6 @@ export default function Projects() {
       ]
     },
     {
-      // --- UPGRADED LUMINARYX STRUCTURE ---
       title: "LUMINARYX",
       category: "Secure Supply Chain Intelligence & Analytics Core",
       stack: "React / FastAPI / PostgreSQL",

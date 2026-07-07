@@ -12,12 +12,12 @@ export default function VisualGallery() {
 
   // Your GUI showcases mapped out
   const guis = [
-    { title: "SIGNATURA", category: "E-Commerce Archive" },
-    { title: "HOUSE SIGHT TANZA", category: "Telemetry & Map Render" },
-    { title: "LUMINARYX", category: "Creative System" },
-    { title: "CONTINUUM", category: "AI Command Center" },
-    { title: "FERROHEART", category: "Dating Surprise" },
-    { title: "OCULAR", category: "Exam Generator" }
+    { title: "SIGNATURA", category: "Cryptographic E-Commerce Ledger & Edge Architecture" },
+    { title: "HOUSE SIGHT TANZA", category: "Localized Property Intelligence & Virtual Discovery" },
+    { title: "LUMINARYX", category: "Secure Supply Chain Intelligence & Analytics Core" },
+    { title: "CONTINUUM", category: "Editorial Synthesis & Automated Content Archival" },
+    { title: "FERROHEART", category: "Premium Digital Archiving & Cinematic Timeline Generation" },
+    { title: "OCULAR", category: "Cognitive Architecture & Automated Intel" }
   ];
 
   useGSAP(() => {
@@ -71,14 +71,14 @@ export default function VisualGallery() {
         {guis.map((gui, index) => (
           <div key={index} className="w-[85vw] md:w-[60vw] h-full shrink-0 flex flex-col justify-center group relative">
             
-            {/* The Image Container */}
-            <div className="w-full h-[85%] bg-zinc-900 border border-zinc-800 relative overflow-hidden">
+            {/* UPGRADED: Replaced h-[85%] with aspect-video to lock the landscape shape on all devices */}
+            <div className="w-full aspect-video bg-zinc-900 border border-zinc-800 relative overflow-hidden shadow-2xl">
                
-               {/* Your actual screenshots */}
+               {/* UPGRADED: Added object-top to anchor the UI screenshots correctly */}
                <img 
                  src={`/gui-${index + 1}.png`} 
                  alt={gui.title} 
-                 className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" 
+                 className="w-full h-full object-cover object-top opacity-80 group-hover:opacity-100 transition-opacity duration-500" 
                />
             </div>
             
