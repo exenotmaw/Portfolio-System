@@ -288,7 +288,7 @@ export default function Projects() {
   );
 
   return (
-    <div ref={containerRef} className="w-full bg-[#0a0a0a] text-white py-24 px-6 md:px-12 max-w-7xl mx-auto overflow-hidden">
+    <div id="work" ref={containerRef} className="w-full bg-[#0a0a0a] text-white py-24 px-6 md:px-12 max-w-7xl mx-auto overflow-hidden">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
         
         {/* ================= ON TRACK COLUMN ================= */}

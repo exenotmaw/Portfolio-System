@@ -99,7 +99,12 @@ export default function SocialGallery() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="w-full py-32 bg-[#0a0a0a] flex flex-col items-center overflow-hidden">
+    <section 
+      id="socials" 
+      ref={containerRef} 
+      className="w-full py-32 bg-[#0a0a0a] flex flex-col items-center overflow-hidden"
+    >
+      {/* ... */}
       
       <h2 className="text-white text-5xl md:text-7xl font-serif font-black tracking-tighter mb-16 text-center leading-[0.9] z-10">
         WHAT'S UP <br /> 

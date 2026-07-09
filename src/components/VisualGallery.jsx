@@ -41,10 +41,10 @@ export default function VisualGallery() {
   }, { scope: containerRef });
 
   return (
-    // The Outer Container: Takes up exactly one full screen height and hides overflow
     <section 
+      id="socials" 
       ref={containerRef} 
-      className="h-screen w-full bg-[#0a0a0a] overflow-hidden relative flex flex-col justify-center border-t border-zinc-900"
+      className="w-full py-32 bg-[#0a0a0a] flex flex-col items-center overflow-hidden"
     >
       
       {/* Background Section Title (Optional, but looks cool) */}
