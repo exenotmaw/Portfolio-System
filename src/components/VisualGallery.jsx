@@ -42,9 +42,9 @@ export default function VisualGallery() {
 
   return (
     <section 
-      id="socials" 
+      id="visuals"
       ref={containerRef} 
-      className="w-full py-32 bg-[#0a0a0a] flex flex-col items-center overflow-hidden"
+      className="h-screen w-full bg-[#0a0a0a] overflow-hidden relative flex flex-col justify-center border-t border-zinc-900"
     >
       
       {/* Background Section Title (Optional, but looks cool) */}
