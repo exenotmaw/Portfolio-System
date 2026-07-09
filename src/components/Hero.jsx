@@ -58,7 +58,7 @@ export default function Hero() {
           <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-black text-white leading-[1.1] mb-8 tracking-tighter uppercase">
             John Mar Fulton <br/>
             <span className="text-[#FF0033] text-2xl md:text-4xl lg:text-5xl tracking-tight">
-              // Bachelor of Science in Computer Science
+              BS in Computer Science
             </span>
           </h1>
           
