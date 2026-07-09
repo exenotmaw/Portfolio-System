@@ -57,12 +57,12 @@ export default function Hero() {
           <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-black text-white leading-[1.1] mb-8 tracking-tighter uppercase">
             John Mar Fulton <br/>
             <span className="text-[#FF0033] text-2xl md:text-4xl lg:text-5xl tracking-tight">
-              // Bachelor of Science in Computer Science
+              Bachelor of Science in Computer Science
             </span>
           </h1>
           
           <p className="text-zinc-400 text-base md:text-lg leading-relaxed max-w-lg mb-10 font-sans text-justify">
-            Specializing in bridging the gap between robust backend engineering and high-end frontend execution. From real-time inventory ecosystems to predictive environmental telemetry, my work focuses on precision, performance, and uncompromising design.
+            If you need your idea brought to life, this is the developer you want. I executed and deployed a comprehensive full-stack solution for you. By taking on every technical responsibility from frontend design to backend security, I will successfully turned your complex concept into a fully functioning, user-centric reality.
           </p>
           
           {/* Action Buttons */}
