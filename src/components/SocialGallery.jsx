@@ -59,11 +59,11 @@ export default function SocialGallery() {
   useGSAP(() => {
     // Math to create the perfect fan spread
     const spreadConfigs = [
-      { x: window.innerWidth < 768 ? -100 : -280, rotation: -16, y: 40, scale: 0.85 },
-      { x: window.innerWidth < 768 ? -50 : -140, rotation: -8, y: 20, scale: 0.95 },
-      { x: 0, rotation: 0, y: 0, scale: 1.05 }, 
-      { x: window.innerWidth < 768 ? 50 : 140, rotation: 8, y: 20, scale: 0.95 },
-      { x: window.innerWidth < 768 ? 100 : 280, rotation: 16, y: 40, scale: 0.85 },
+      { x: window.innerWidth < 768 ? -75 : -280, rotation: -16, y: window.innerWidth < 768 ? 20 : 40, scale: window.innerWidth < 768 ? 0.75 : 0.85 },
+      { x: window.innerWidth < 768 ? -35 : -140, rotation: -8, y: window.innerWidth < 768 ? 10 : 20, scale: window.innerWidth < 768 ? 0.85 : 0.95 },
+      { x: 0, rotation: 0, y: 0, scale: window.innerWidth < 768 ? 0.95 : 1.05 }, 
+      { x: window.innerWidth < 768 ? 35 : 140, rotation: 8, y: window.innerWidth < 768 ? 10 : 20, scale: window.innerWidth < 768 ? 0.85 : 0.95 },
+      { x: window.innerWidth < 768 ? 75 : 280, rotation: 16, y: window.innerWidth < 768 ? 20 : 40, scale: window.innerWidth < 768 ? 0.75 : 0.85 },
     ];
 
     // 1. Initial State: Stack them ALL perfectly in the dead center
@@ -113,25 +113,15 @@ export default function SocialGallery() {
 
       <div className="relative w-full h-[400px] md:h-[500px] flex justify-center items-center mt-12">
         {socials.map((social, index) => {
-          // Calculate base z-index for the resting state
           const zIndexValue = 5 - Math.abs(2 - index); 
           
           return (
-            /* THE OUTER WRAPPER:
-              Controlled by GSAP. We use `hover:!z-50` here so when hovered, 
-              it forcefully jumps to the very front of the stacking context.
-            */
             <div 
               key={social.id}
               ref={el => cardsRef.current[index] = el}
               style={{ zIndex: zIndexValue }}
-              className="absolute w-44 h-64 md:w-72 md:h-[26rem] hover:!z-50 group cursor-pointer"
+              className="absolute w-36 h-56 sm:w-44 sm:h-64 md:w-72 md:h-[26rem] hover:!z-50 group cursor-pointer"
             >
-              
-              {/* THE INNER CARD: 
-                Changed from a <div> to an <a> tag to make it a functional link 
-                Added block class so the anchor tag behaves like a div wrapper
-              */}
               <a 
                 href={social.link}
                 target="_blank"

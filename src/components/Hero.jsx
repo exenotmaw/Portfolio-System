@@ -46,7 +46,7 @@ export default function Hero() {
   }, { scope: containerRef });
 
   return (
-    <div ref={containerRef} className="h-screen w-full relative overflow-hidden bg-transparent flex flex-col items-center justify-center max-w-7xl mx-auto px-6 md:px-12 pt-20">
+    <div ref={containerRef} className="h-screen w-full relative overflow-hidden bg-transparent flex flex-col items-center justify-center max-w-7xl mx-auto px-6 md:px-12 pt-32 md:pt-20">
 
       {/* --- THE SPLIT LAYOUT (Scales as one unit on scroll) --- */}
       <div ref={posterRef} className="relative z-20 w-full flex flex-col md:flex-row items-center justify-between origin-center gap-12 md:gap-8">
