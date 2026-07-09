@@ -64,7 +64,7 @@ export default function Projects() {
       category: "Editorial Synthesis & Automated Content Archival",
       stack: "React / FastAPI / GenAI",
       description: "A full-stack, AI-powered editorial dashboard designed for high-fidelity content synthesis. Continuum bridges the gap between raw ideation and production-ready publishing by autonomously generating, routing, and archiving editorial copy and visual asset prompts within a cinematic, state-driven interface.",
-      link: "https://continuum-two-beta.vercel.app/",
+      link: "https://continuum-editorial.vercel.app/",
       
       technicalBreakdown: [
         "Spearheaded the end-to-end development of a multi-tenant content management SaaS utilizing a Vite/React frontend and a Python/FastAPI backend, establishing a secure, CORS-protected production environment across Vercel and Render.",
@@ -118,7 +118,7 @@ export default function Projects() {
       category: "Cognitive Architecture & Automated Intel",
       stack: "React / FastAPI / PostgreSQL",
       description: "A full-stack, AI-powered terminal designed for rigorous academic synthesis. Ocular bypasses manual data entry by extracting intelligence from multimodal manuscripts and generating structured, high-fidelity examinations.",
-      link: "https://ocular-six.vercel.app/",
+      link: "https://ocular-archive.vercel.app/",
       
       technicalBreakdown: [
         "Architected a multimodal, AI-driven terminal that instantly transforms raw text, PDFs, and images into structured academic examinations using the Google Gemini 2.5 Flash engine.",
@@ -142,7 +142,7 @@ export default function Projects() {
       category: "Secure Supply Chain Intelligence & Analytics Core",
       stack: "React / FastAPI / PostgreSQL",
       description: "A highly secure, full-stack inventory management terminal designed for real-time catalog synchronization and predictive forecasting. Luminaryx empowers administrators with high-speed data entry, deep analytics, and uncompromising cryptographic security within a fluid, cinematic user interface.",
-      link: "https://luminaryx-rho.vercel.app/",
+      link: "https://luminaryx-inventory.vercel.app/",
       
       technicalBreakdown: [
         "Architected a decoupled, cloud-native application integrating a Vite/React frontend on Vercel with a Python/FastAPI backend on Render, achieving seamless, real-time synchronization between the user interface and a cloud-hosted Neon PostgreSQL database.",
