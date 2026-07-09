@@ -61,7 +61,7 @@ export default function Navbar() {
           ))}
           
           <a 
-            href="/Curriculum_Vitae.pdf" 
+            href="/Curriculum-Vitae.pdf" 
             target="_blank" 
             rel="noreferrer" 
             className="ml-4 bg-white text-[#0a0a0a] px-6 py-2.5 text-xs font-black font-mono uppercase tracking-widest hover:bg-[#FF0033] hover:text-white transition-all duration-300 rounded-sm shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_20px_rgba(255,0,51,0.4)]"
