@@ -77,7 +77,7 @@ export default function Hero() {
               Resume ↗
             </a>
             <a 
-              href="mailto:anonymous.raizel@gmail.com" 
+              href="#contact" 
               className="bg-transparent text-white border border-zinc-700 px-8 py-4 rounded hover:bg-zinc-800 transition-colors duration-300"
             >
               Contact
